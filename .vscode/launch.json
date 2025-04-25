@@ -1,0 +1,16 @@
+{
+	"configurations": [
+		{
+			"args": [
+				"--extensionDevelopmentPath=${workspaceRoot}"
+			],
+			"name": "Launch Extension",
+			"preLaunchTask": "npm",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"sourceMaps": true,
+			"type": "extensionHost"
+		}
+	],
+	"version": "0.2.0"
+}

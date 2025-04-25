@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"lib": [
+			"es6",
+			"dom"
+		],
+		"module": "commonjs",
+		"noLib": false,
+		"outDir": "out",
+		"rootDir": ".",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"target": "es6",
+		"types": [
+			"node",
+			"vscode"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"src/extension.ts"
+	]
+}

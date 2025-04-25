@@ -1,0 +1,51 @@
+{
+  "author": "Vittorio Giorgio Candolo",
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateUUID",
+        "title": "Generate UUID"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.generateUUID",
+        "key": "ctrl+u ctrl+u",
+        "mac": "cmd+u cmd+u",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "description": "Insert a UUID",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.75.0",
+    "@vscode/vsce": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "displayName": "vscode-uuid",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "icon": "icon.png",
+  "keywords": [
+    "uuid",
+    "guid"
+  ],
+  "license": "Apache-2.0",
+  "main": "./out/src/extension",
+  "name": "vscode-uuid",
+  "publisher": "vgcs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vgcs-gh/vscode-uuid.git"
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "package": "vsce package -o ./out/vscode-uuid.vsix"
+  },
+  "version": "1.0.0-rc1"
+}
